@@ -9,7 +9,6 @@ O site do grêmio é utilizado por estudantes/comunidade estudantil e membros do
 
 ### Principais funcionalidades
 - Visualizar informações relacionadas ao grêmio;
-- Criar, visualizar e comentar em fóruns criados;
 - Acessar links externos, como o site do IFNMG campus Salinas e o Instagram oficial do Grêmio Onze de Outubro;
 - Falar com o Grêmio;
 - Acesso restrito para membros do grêmio;
