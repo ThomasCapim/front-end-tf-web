@@ -1,37 +1,43 @@
-h1 {
-    color: blue;
-}
-header{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
+#menu {
+display: flex;
+justify-content: center; /* Centraliza o menu */
+list-style-type: none;
+padding: 0;
+margin: 0;
 }
 
-#menu{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-around;
-    gap:10px;
-    list-style-type:none;
+.item-menu {
+margin: 0 20px; /* Espaçamento entre os itens do menu */
 }
 
 .link-menu {
-    color: #fff;
-    background-color: #555;
-    border-radius:10px;
-    text-decoration:none;
-    padding: 10px 20px;
+color: #fff;
+background-color: #555;
+border-radius: 10px;
+text-decoration: none;
+padding: 15px 30px; /* Aumenta o espaço dentro dos links */
+display: inline-block;
 }
 
-#logo{
-    display:flex;
-    width:100px;
+.menu-flutuante {
+display: none;
+position: absolute;
+list-style-type: none;
+background-color: #555;
+padding: 0;
+margin: 0;
+border-radius: 10px;
+}
+
+.menu-flutuante li {
+margin: 0;
 }
 
 .menu-flutuante a:hover {
-    background-color: #ddd;
+background-color: #ddd;
+color: #333;
 }
 
 .item-menu:hover .menu-flutuante {
-    display: block;
+display: block;
 }
