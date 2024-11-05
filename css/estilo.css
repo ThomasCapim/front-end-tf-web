@@ -1,3 +1,37 @@
 h1 {
     color: blue;
 }
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+#menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap:10px;
+    list-style-type:none;
+}
+
+.link-menu {
+    color: #fff;
+    background-color: #555;
+    border-radius:10px;
+    text-decoration:none;
+    padding: 10px 20px;
+}
+
+#logo{
+    display:flex;
+    width:100px;
+}
+
+.menu-flutuante a:hover {
+    background-color: #ddd;
+}
+
+.item-menu:hover .menu-flutuante {
+    display: block;
+}
