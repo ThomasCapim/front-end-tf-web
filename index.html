@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta charset="UTF-8">
         <title>Página Inicial</title>
-        <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="stylesheet" href="/css/estilo.css"/>
     </head>
     <body>
         <script src="main.js"></script>
         <header>
-            <div id="logo">
-              <a href="index.html">
-                <img id="logo" src="imgs/fofo.gif" alt="Imagem Indisponível">
-              </a>
-            </div>
-            <nav>
-              <ul id="menu">
-                <li class="item-menu"><a class="link-menu" href="index.html">Página Inicial</a></li>
-                <li class="item-menu">
-                  <a class="link-menu" href="#">Sobre</a>
-                  <ul class="menu-flutuante">
-                    <li><a class="link-menu oGremio" href="SobreGrêmio.html">O que é o Grêmio?</a></li>
-                    <li><a class="link-menu membros" href="MembrosGrêmio.html">Membros do Grêmio</a></li>
-                    <li><a class="link-menu chapas" href="Chapas.html">Chapas anteriores</a></li>
-                  </ul>
-                </li>
-                <li class="item-menu"><a class="link-menu m" href="VerFóruns.html">Links Úteis</a></li>
-              </ul>
-            </nav>
-          </header>
-    </body>
+			<div id="logo">
+				<a href="/index.html">
+					<img id="logo" src="/imgs/logoGremio.png">
+				</a>
+			</div>
+			<nav>
+				<ul class="menu"> <!-- usar listas em vez de divs evita a poluição visual e "make your site's navigation much more accessible to search engines" -->
+					<li class="">
+						<a href="/index.html"><span class="btn-menu">Página Inicial</span></a>
+					</li>
+					<li class="dropdown"><span class="btn-menu">Sobre o grêmio</span>
+						<ul class="dropdown-items">
+							<li><a href="/PáginasUsuários/SobreGrêmio.html">O que é o grêmio?</a></li>
+							<li><a href="/PáginasUsuários/MembrosGrêmio.html">Membros do grêmio</a></li>
+							<li><a href="/PáginasUsuários/Chapas.html">Chapas anteriores</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><span class="btn-menu">Links úteis</span>
+						<ul class="dropdown-items">
+							<li><a href="https://www.instagram.com/gremionzedeoutubro">Instagram</a></li>
+							<li><a href="/PáginasUsuários/FaleConosco.html">Fale conosco</a></li>
+							<li><a href="https://ifnmg.edu.br/salinas">Portal IFNMG – Campus Salinas</a></li>
+							<li><a href="/PáginasAcessoRestrito/LoginAcessoRestrito">Acesso restrito</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+        </header>
+
+	</body>
 </html>

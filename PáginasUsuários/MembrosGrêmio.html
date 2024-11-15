@@ -1,25 +1,56 @@
 <!DOCTYPE html>
-<html lang='pt-br'>
-  <head>
-    <meta charset='UTF-8'/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> Título da sua página </title>
-  </head>
-  <body>
-    <img src="xxxxxxxxxxxx.jpg">
-    <p>
-        <strong>Cargo:</strong> Vice-presidente
-        <strong>Nome:</strong> Aline Moreira Araújo 
-        <strong>Turma:</strong> 3° ano - Informática B
-        <strong>Email:</strong> ama11@aluno.ifnmg.edu.br
-    </p>
-    <p>
-        <hr>
-        <img src="xxxxxxxxx.jpg">
-        <strong>Cargo:</strong> Tesoureiro
-        <strong>Nome:</strong> Thomás Matos Mendes
-        <strong>Turma:</strong> 3° ano - Informática B
-        <strong>Email:</strong> tmm9@aluno.ifnmg.edu.br
-    </p>
+<html>
+    <head>
+		<meta charset="UTF-8">
+        <title>Página Inicial</title>
+        <link rel="stylesheet" href="/css/estilo.css"/>
+    </head>
+    <body>
+        <script src="main.js"></script>
+        <header>
+			<div id="logo">
+				<a href="/index.html">
+					<img id="logo" src="/imgs/logoGremio.png">
+				</a>
+			</div>
+			<nav>
+				<ul class="menu"> <!-- usar listas em vez de divs evita a poluição visual e "make your site's navigation much more accessible to search engines" -->
+					<li class="">
+						<a href="/index.html"><span class="btn-menu">Página Inicial</span></a>
+					</li>
+					<li class="dropdown"><span class="btn-menu">Sobre o grêmio</span>
+						<ul class="dropdown-items">
+							<li><a href="/PáginasUsuários/SobreGrêmio.html">O que é o grêmio?</a></li>
+							<li><a href="/PáginasUsuários/MembrosGrêmio.html">Membros do grêmio</a></li>
+							<li><a href="/PáginasUsuários/Chapas.html">Chapas anteriores</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><span class="btn-menu">Links úteis</span>
+						<ul class="dropdown-items">
+							<li><a href="https://www.instagram.com/gremionzedeoutubro">Instagram</a></li>
+							<li><a href="/PáginasUsuários/FaleConosco.html">Fale conosco</a></li>
+							<li><a href="https://ifnmg.edu.br/salinas">Portal IFNMG – Campus Salinas</a></li>
+							<li><a href="/PáginasAcessoRestrito/LoginAcessoRestrito">Acesso restrito</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+        </header>
+
+		<img src="xxxxxxxxxxxx.jpg">
+		<p>
+			<strong>Cargo:</strong> Vice-presidente
+			<strong>Nome:</strong> Aline Moreira Araújo 
+			<strong>Turma:</strong> 3° ano - Informática B
+			<strong>Email:</strong> ama11@aluno.ifnmg.edu.br
+		</p>
+		<p>
+			<hr>
+			<img src="xxxxxxxxx.jpg">
+			<strong>Cargo:</strong> Tesoureiro
+			<strong>Nome:</strong> Thomás Matos Mendes
+			<strong>Turma:</strong> 3° ano - Informática B
+			<strong>Email:</strong> tmm9@aluno.ifnmg.edu.br
+		</p>
   </body>
 </html>
