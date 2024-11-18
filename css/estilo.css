@@ -1,16 +1,49 @@
+/* Estilos gerais */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+html, body, section{
+    height: 100%;
+}
+
 body{
-    background-color: cadetblue;
+    background-color: white;
     font-family: Helvetica;
 }
 
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between; /* Deixará com espaços entre os objetos*/
+    align-items: center;
+    position: fixed; /**/
+    width: 100%;
+    box-shadow: 0 0 10px #418087;
+    padding: 0px 80px;
+
+    z-index: 3;
+}
+
+section {
+    padding-top: 135px;
+}
+
+
+/* Conteúdos do Header */
+div#logo{
+    margin-top: 10px;
+}
+
+#logo {
+    height: 125px;
+}
+
 .btn-menu{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -22,26 +55,16 @@ a:not(:has(img)) { /* :not(:has(img)) vai selecionar todos os elementos, exceto 
 }
 
 a:not(:has(img)):hover{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #418087;
 }
 
-div#logo{
-    margin-top: 10px;
+#restrito-btn-menu {
+    transition: color 0.5s ease, border-bottom 0.5s ease;
 }
 
-#logo {
-    height: 150px;
-}
-
-header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between; /* Deixará com espaços entre os objetos*/
-    align-items: center;
-    position: fixed; /**/
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    padding: 0px 80px;
+#restrito-btn-menu:hover {
+    border-bottom: 2px solid #da0001;
+    color: #da0001;
 }
 
 .menu {
@@ -66,14 +89,14 @@ header {
 }
 
 .dropdown-items{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px #418087 /* rgba(0, 0, 0, 0.4) */;
     display: none;
 }
 
 .dropdown:hover .dropdown-items {
     display: flex;
     flex-direction: column;
-    background: rgb(250, 250, 250);
+    background: rgb(254, 254, 254);
     border-radius: 5px;
     padding-top: 60px;
     min-width: 241px; /* Coloquei para que o dropbox tenha uma largura mínima, pois tinha uns textos quebrando a linha e que tava ficando feio. */
@@ -85,11 +108,55 @@ header {
 
 .dropdown-items li {
     list-style: none;
-    border-bottom: 1px solid black;
+    border-bottom: 2px groove #418087;
     padding: 0 60px 10px 20px;
     margin: 10px;
 }
 
 .dropdown-items li:last-of-type{
     border-bottom: none;
+}
+
+/* Conteúdos do Section */
+.area{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100%;
+}
+
+.modal {
+    /* width: 100px;
+    height: 100px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #418087;
+}
+
+.title-modal {
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+}
+.content-modal {
+
+}
+
+.content-form {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.content-form input[type="text"] {
+    width: 250px;
+    
+  }
+
+.content-form label {
+    padding-right: 20px;
 }
