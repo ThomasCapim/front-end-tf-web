@@ -20,7 +20,6 @@ header {
     display: flex;
     justify-content: space-between; /* Deixará com espaços entre os objetos*/
     align-items: center;
-    position: fixed; /**/
     width: 100%;
     box-shadow: 0 0 10px #418087;
     padding: 0px 80px;
@@ -185,3 +184,22 @@ button {
     background-color: #dc3131;
     color: #fff;
 }
+
+#p1membros{
+    display:flex;
+    flex-direction:row;
+    margin-top:50px;
+    margin-left:50px;
+    gap:0px;
+}
+
+#p2membros{
+    display:flex;
+    flex-direction:row;
+    margin-top:50px;
+    margin-left:50px;
+    gap:0px;
+}
+
+
+
