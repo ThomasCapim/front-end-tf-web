@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+.title-bold {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
 html, body, section{
     height: 100%;
 }
@@ -37,7 +43,7 @@ section {
 }
 
 
-/* Conteúdos do Header */
+/* >>>>>>>>>>>>>>>> Conteúdos do Header <<<<<<<<<<<<<<<< */
 div#logo{
     margin-top: 10px;
 }
@@ -142,7 +148,8 @@ a:not(:has(img)):hover{
     border-bottom: none;
 }
 
-/* Conteúdos do Section */
+/* >>>>>>>>>>>>>>>> Conteúdos do Section <<<<<<<<<<<<<<<< */
+/* Modais */
 .area{
     display: flex;
     justify-content: center;
@@ -166,10 +173,6 @@ a:not(:has(img)):hover{
     font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 40px;
-}
-.content-modal {
-    /*padding: 50px;*/
-    
 }
 
 .content-form {
@@ -211,17 +214,50 @@ button {
     color: #fff;
 }
 
-
-/* Outra Coisa Lá de Sofia */
-#p1membros{
-    display:flex;
-    flex-direction:row;
-    margin-top:50px;
-    margin-left:50px;
-    gap:0px;
+.center{
+    display: flex;
+    justify-content: center;
+    margin: 10px 200px 0;
+    flex-direction: column;
 }
 
-#p2membros{
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+td, th {
+    border: 1px solid black;
+    padding: 5px 4px;
+}
+.action-btn, .edit-btn, .delete-btn {
+    display: flex;
+    justify-content: center;
+}
+.edit-btn, .delete-btn {
+    flex: 1;
+}
+
+.grupo-tabelas {
+    margin-bottom: 30px;
+}
+.grupo-tabelas:last-of-type {
+    margin-bottom: none;
+}
+
+.grupo-tabelas > .title-bold:last-of-type{
+    font-size: 16px;
+}
+.grupo-tabelas > .title-bold:first-of-type {
+    font-size: 32px;
+    margin: 15px 0 35px;
+}
+
+
+/* Outra Coisa Lá de Sofia */
+.espaco-membro{
     display:flex;
     flex-direction:row;
     margin-top:50px;
