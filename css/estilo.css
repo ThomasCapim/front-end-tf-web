@@ -23,8 +23,13 @@ header {
     width: 100%;
     box-shadow: 0 0 10px #418087;
     padding: 0px 80px;
+    position: fixed; /* não remover isso sofia pelo amor de deus */
 
     z-index: 3;
+}
+/* Restrito */
+header#cor-restrito{
+    box-shadow:0 0 10px #da0001;
 }
 
 section {
@@ -56,14 +61,23 @@ a:not(:has(img)) { /* :not(:has(img)) vai selecionar todos os elementos, exceto 
 a:not(:has(img)):hover{
     border-bottom: 2px solid #418087;
 }
+/* Restrito*/
+#cor-restrito a:not(:has(img)):hover{
+    border-bottom: 2px solid #da0001;
+}
 
-#restrito-btn-menu {
+#restr-btn-menu-verm, #restr-btn-menu-azul {
     transition: color 0.5s ease, border-bottom 0.5s ease;
 }
 
-#restrito-btn-menu:hover {
+#restr-btn-menu-verm:hover {
     border-bottom: 2px solid #da0001;
     color: #da0001;
+}
+/* Restrito */
+#restr-btn-menu-azul:hover{
+    border-bottom: 2px solid #418087;
+    color: #418087;
 }
 
 .menu {
@@ -91,6 +105,10 @@ a:not(:has(img)):hover{
     box-shadow: 0 0 10px #418087 /* rgba(0, 0, 0, 0.4) */;
     display: none;
 }
+/* Restrito */
+#cor-restrito .dropdown-items{
+    box-shadow: 0 0 10px #da0001;
+}
 
 .dropdown:hover .dropdown-items {
     display: flex;
@@ -111,8 +129,16 @@ a:not(:has(img)):hover{
     padding: 0 60px 10px 20px;
     margin: 10px;
 }
+/* Restrito */
+#cor-restrito .dropdown-items li {  
+    border-bottom: 2px groove #da0001;
+}
 
 .dropdown-items li:last-of-type{
+    border-bottom: none;
+}
+/* Restrito */
+#cor-restrito .dropdown-items li:last-of-type{
     border-bottom: none;
 }
 
@@ -185,6 +211,8 @@ button {
     color: #fff;
 }
 
+
+/* Outra Coisa Lá de Sofia */
 #p1membros{
     display:flex;
     flex-direction:row;
