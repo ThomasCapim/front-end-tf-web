@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="/css/estilo.css" />
+    <script src="https://kit.fontawesome.com/ea32392e48.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <header id="cor-restrito">
+        <div id="logo">
+            <a href="/index.html">
+                <img id="logo" src="/imgs/logoGremio.png">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <!-- usar listas em vez de divs evita a poluição visual e "make your site's navigation much more accessible to search engines" -->
+                <li class="">
+                    <a href="/PáginasAcessoRestrito/InicioAcessoRestrito.html"><span class="btn-menu">Página
+                            Inicial</span></a>
+                </li>
+                <li class="dropdown"><span class="btn-menu">Sobre o grêmio</span>
+                    <ul class="dropdown-items">
+                        <li><a href="/PáginasUsuários/SobreGrêmio.html">O que é o grêmio?</a></li>
+                        <li><a href="/PáginasUsuários/MembrosGrêmio.html">Membros do grêmio</a></li>
+                        <li><a href="/PáginasUsuários/Chapas.html">Chapas anteriores</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><span class="btn-menu">Links úteis</span>
+                    <ul class="dropdown-items">
+                        <li><a href="https://www.instagram.com/gremionzedeoutubro">Instagram</a></li>
+                        <li><a href="/PáginasUsuários/FaleConosco.html">Fale conosco</a></li>
+                        <li><a href="https://ifnmg.edu.br/salinas">Portal IFNMG – Campus Salinas</a></li>
+                        <li><a href="/PáginasAcessoRestrito/LoginAcessoRestrito.html" id="restr-btn-menu-azul">Acesso
+                                restrito</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="center">
+            <div class="title-bold first">Nova postagem</div>
+            <form class="" action="" method="">
+                <div class="">
+                    <label for="">Título da postagem</label>
+                    <input type="text">
+                </div>
+                <div class="">
+                    <label for="entidade">Entidade</label>
+                    <select name="" id="entidade">
+                        <option value="p">Presidência do Grêmio</option>
+                        <option value="dc">Diretoria de Cultura</option>
+                        <option value="de">Diretoria de Esportes</option>
+                        <option value="dsma">Diretoria de Saúde e Meio Ambiente</option>
+                        <option value="t">Tesouraria</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="corpo-text"></label>
+                    <textarea name="corpo-text" id="corpo-text"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

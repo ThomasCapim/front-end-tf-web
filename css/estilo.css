@@ -57,6 +57,8 @@ div#logo{
     font-weight: bold;
 }
 
+
+/* Preciso mudar essa estrutura dos links, tá muito mal organizada */
 a:not(:has(img)) { /* :not(:has(img)) vai selecionar todos os elementos, exceto aqueles que contêm imagens */
     color: black;
     text-decoration: none;
@@ -183,7 +185,7 @@ a:not(:has(img)):hover{
     margin-bottom: 20px;
 }
 
-.content-form input[type="text"], input[type="password"] {
+.content-form input[type="email"], input[type="password"] {
     width: 250px;
   }
 
@@ -247,12 +249,12 @@ td, th {
     margin-bottom: none;
 }
 
-.grupo-tabelas > .title-bold:last-of-type{
-    font-size: 16px;
-}
-.grupo-tabelas > .title-bold:first-of-type {
+.grupo-tabelas > .title-bold:first-of-type, .first {
     font-size: 32px;
     margin: 15px 0 35px;
+}
+.grupo-tabelas > .title-bold:last-of-type{
+    font-size: 16px;
 }
 
 
