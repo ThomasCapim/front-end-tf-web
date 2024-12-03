@@ -268,4 +268,10 @@ td, th {
 }
 
 
-
+.meio-img{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    
+}
+ 
