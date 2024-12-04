@@ -185,14 +185,21 @@ a:not(:has(img, button)):hover{
     margin-bottom: 20px;
 }
 
-.linha-form input[type="email"], input[type="password"], input[type="text"] {
-    width: 250px;
-  }
+.linha-form input[type="email"], .linha-form input[type="password"], .linha-form input[type="text"], .linha-form textarea, .linha-form select {
+    width: 300px;
+    font-family: inherit;
+    font-size: 14px;
+}
 
 .linha-form label {
     padding-right: 20px;
-    text-align: right;
-    width: 120px;
+    text-align: left;
+    width: 180px;
+}
+
+.linha-form textarea{
+    resize: none;
+    min-height: 200px;
 }
 
 button {
@@ -266,6 +273,3 @@ td, th {
     margin-left:50px;
     gap:0px;
 }
-
-
-

@@ -21,9 +21,9 @@
 					</li>
 					<li class="dropdown"><span class="btn-menu">Sobre o grêmio</span>
 						<ul class="dropdown-items">
-							<li><a href="/PáginasUsuários/SobreGrêmio.html">O que é o grêmio?</a></li>
-							<li><a href="/PáginasUsuários/MembrosGrêmio.html">Membros do grêmio</a></li>
-							<li><a href="/PáginasUsuários/Chapas.html">Chapas anteriores</a></li>
+							<!-- <li><a href="/PáginasUsuários/SobreGrêmio.html">O que é o grêmio?</a></li> -->
+							<li><a href="/PáginasAcessoRestrito/EditarMembrosAcessoRestrito.html">Editar membros do grêmio</a></li>
+							<li><a href="/PáginasAcessoRestrito/EditarChapasAcessoRestrito.html">Editar chapas anteriores</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><span class="btn-menu">Links úteis</span>
@@ -41,28 +41,28 @@
 		<section>
 			<div class="center">
 				<div class="title-bold first">Novo evento</div>
-				<form action="">
-					<div>
-						<label for="">Nome do Evento</label>
-						<input type="" name="" id="">
+				<form action="" class="content-form">
+					<div class="linha-form">
+						<label for="nomeEvent">Nome do Evento</label>
+						<input type="text" name="nomeEvent" id="nomeEvent">
 					</div>
-					<div>
-						<label for="">Local do Evento</label>
-						<input type="" name="" id="">
+					<div class="linha-form">
+						<label for="locEvent">Local do Evento</label>
+						<input type="text" name="locEvent" id="locEvent">
 					</div>
-					<div>
-						<label for="">Detalhes do Evento</label>
-						<textarea name="" id=""></textarea>
+					<div class="linha-form">
+						<label for="detalhesEvent">Detalhes do Evento</label>
+						<textarea name="detalhesEvent" id="detalhesEvent"></textarea>
 					</div>
-					<div>
-						<label for="">Data de Início</label>
-						<input type="date" name="" id="">
+					<div class="linha-form">
+						<label for="dataIni">Data de Início</label>
+						<input type="date" name="dataIni" id="dataIni">
 					</div>
-					<div>
-						<label for="">Data de Fim</label>
-						<input type="date" name="" id="">
+					<div class="linha-form">
+						<label for="dataFim">Data de Fim</label>
+						<input type="date" name="dataFim" id="dataFim">
 					</div>
-					<div>
+					<div class="linha-form">
 						<button>Definir evento</button>
 					</div>
 				</form>
