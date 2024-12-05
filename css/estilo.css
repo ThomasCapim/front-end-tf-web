@@ -249,6 +249,9 @@ button {
     align-items: center;
     flex-direction: column;
 }
+.h-align > form{
+    margin-top: 20px;
+}
 
 .flex-edit-restrito{
     display: flex;
@@ -260,6 +263,19 @@ button {
 }
 .edit-memb-chap-right{
     flex: 3;
+}
+
+.memb-chap-infos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.memb-chap-info{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 table {
@@ -316,7 +332,6 @@ td, th {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .fotoPerfil img{
