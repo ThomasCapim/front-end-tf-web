@@ -186,7 +186,7 @@ a:not(:has(img, button)):hover{
     margin-bottom: 20px;
 }
 
-.linha-form input[type="email"], .linha-form input[type="password"], .linha-form input[type="text"], .linha-form textarea, .linha-form select {
+.linha-form input[type="email"], .linha-form input[type="password"], .linha-form input[type="text"], .linha-form textarea, .linha-form select, .linha-form input[type="date"] {
     width: 300px;
     font-family: inherit;
     font-size: 14px;
@@ -203,8 +203,14 @@ a:not(:has(img, button)):hover{
     min-height: 200px;
 }
 
-select#ano, select#turma{
+select#ano, select#turma, .linha-form input[type="date"]{
     width: auto;
+}
+.linha-form input[type="date"]{
+    margin: 0 10px;
+}
+.linha-form input[type="date"]:last-of-type{
+    margin-right: 0;
 }
 
 button {
@@ -237,6 +243,9 @@ button {
     justify-content: center;
     margin: 10px 200px 0;
     flex-direction: column;
+}
+.center:has(form.content-form>.linhaform){
+    
 }
 
 .v-align{
