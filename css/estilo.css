@@ -218,6 +218,10 @@ button {
     border-width: 1px;
     background-color: #dc7777;
 }
+.lf-btn{
+    display: flex;
+    justify-content: center;
+}
 
 .linha-form button:hover{
     background-color: #db5f5f;
