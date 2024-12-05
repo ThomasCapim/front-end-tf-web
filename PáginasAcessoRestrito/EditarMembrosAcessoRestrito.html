@@ -2,7 +2,7 @@
 <html>
     <head>
 		<meta charset="UTF-8">
-        <title>Página Inicial</title>
+        <title>Editar membros do Grêmio – Acesso Restrito</title>
         <link rel="stylesheet" href="/css/estilo.css"/>
 		<script src="https://kit.fontawesome.com/ea32392e48.js" crossorigin="anonymous"></script>
     </head>
@@ -10,7 +10,7 @@
         <script src="main.js"></script>
         <header id="cor-restrito">
 			<div id="logo">
-				<a href="/index.html">
+				<a href="/PáginasAcessoRestrito/InicioAcessoRestrito.html">
 					<img id="logo" src="/imgs/logoGremio.png">
 				</a>
 			</div>
@@ -21,9 +21,9 @@
 					</li>
 					<li class="dropdown"><span class="btn-menu">Sobre o grêmio</span>
 						<ul class="dropdown-items">
-							<li><a href="/PáginasUsuários/SobreGrêmio.html">O que é o grêmio?</a></li>
-							<li><a href="/PáginasUsuários/MembrosGrêmio.html">Membros do grêmio</a></li>
-							<li><a href="/PáginasUsuários/Chapas.html">Chapas anteriores</a></li>
+							<!-- <li><a href="/PáginasUsuários/SobreGrêmio.html">O que é o grêmio?</a></li> -->
+							<li><a href="/PáginasAcessoRestrito/EditarMembrosAcessoRestrito.html">Editar membros do grêmio</a></li>
+							<li><a href="/PáginasAcessoRestrito/EditarChapasAcessoRestrito.html">Editar chapas anteriores</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><span class="btn-menu">Links úteis</span>
@@ -39,6 +39,62 @@
         </header>
 
 		<section>
+			<div class="flex-edit-restrito">
+				<div class="v-align edit-memb-chap-left" style="background-color: blanchedalmond;">
+					<div class="title-bold first">Cadastro</div>
+					<div class="fotoPerfil">
+						<img src="" alt="">
+					</div>
+					<form action="">
+						<div class="linha-form">
+							<label for="cargo">Cargo:</label>
+							<select name="cargo" id="cargo">
+								<option value="p">Presidente do Grêmio</option>
+								<option value="dc">Diretor(a) de Cultura</option>
+								<option value="de">Diretor(a) de Esportes</option>
+								<option value="dsma">Diretor(a) de Saúde e Meio Ambiente</option>
+								<option value="t">Tesoureiro(a)</option>
+							</select>
+						</div>
+						<div class="linha-form">
+							<label for="nome">Nome:</label>
+							<input type="text" name="nome" id="nome">
+						</div>
+						<div class="linha-form">
+							<label for="email">E-mail:</label>
+							<input type="email" name="email" id="email">
+						</div>
+						<div class="linha-form">
+							<label for="ano">Ano/Turma:</label>
+							<div>
+								<select class="text-width" name="ano" id="ano">
+									<option value="primeiro">1º ano</option>
+									<option value="segundo">2º ano</option>
+									<option value="terceiro">3º ano</option>
+								</select>
+								<select class="text-width" name="turma" id="turma">
+									<option value="agroinA">Agroindústria A</option>
+									<option value="agroinB">Agroindústria B</option>
+									<option value="agropecA">Agropecuária A</option>
+									<option value="agropecB">Agropecuária B</option>
+									<option value="infoA">Informática A</option>
+									<option value="infoB">Informática B</option>
+								</select>
+							</div>
+						</div>
+						<div class="linha-form">
+							<label for="imgPerfil">Imagem de perfil</label>
+							<input type="file" name="imgPerfil" id="imgPerfil" accept="image/*">
+						</div>
+						<div class="linha-form">
+							<button class="">Cadastrar membro</button>
+						</div>
+					</form>
+				</div>
+				<div class="edit-memb-chap-right">
+					asdkjasdj
+				</div>
+			</div>
 		</section>
 	</body>
 </html>
