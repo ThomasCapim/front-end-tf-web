@@ -185,6 +185,9 @@ a:not(:has(img, button)):hover{
     justify-content: space-between;
     margin-bottom: 20px;
 }
+.center > div.title-bold+form .linha-form {
+    justify-content: left;
+}
 
 .linha-form input[type="email"], .linha-form input[type="password"], .linha-form input[type="text"], .linha-form textarea, .linha-form select, .linha-form input[type="date"] {
     width: 300px;
@@ -195,7 +198,9 @@ a:not(:has(img, button)):hover{
 .linha-form label {
     padding-right: 20px;
     text-align: left;
-    
+}
+.center > div.title-bold+form .linha-form label {
+    width: 200px;
 }
 
 .linha-form textarea{
