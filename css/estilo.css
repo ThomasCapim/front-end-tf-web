@@ -29,7 +29,7 @@ header {
     width: 100%;
     box-shadow: 0 0 10px #418087;
     padding: 0px 80px;
-    /*position: fixed; /* não remover isso sofia pelo amor de deus */
+    position: fixed; /* não remover isso sofia pelo amor de deus */
 
     z-index: 3;
 }
