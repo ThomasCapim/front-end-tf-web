@@ -29,7 +29,7 @@ header {
     width: 100%;
     box-shadow: 0 0 10px #418087;
     padding: 0px 80px;
-    position: fixed; /* não remover isso sofia pelo amor de deus */
+    /*position: fixed; /* não remover isso sofia pelo amor de deus */
 
     z-index: 3;
 }
@@ -235,9 +235,10 @@ button {
 .center{
     display: flex;
     justify-content: center;
+    align-items:center;
     margin: 10px 200px 0;
     flex-direction: column;
-}
+    margin-top:50px;}
 
 .v-align{
     display: flex;
@@ -324,3 +325,52 @@ td, th {
     height: 100%;
     object-fit: cover;
 }
+
+.centralBox    
+{
+    display:flex;
+    flex-direction:column;
+    margin-top:50px;
+    width:500px;
+    height:100%;
+    gap:0px;
+    background-color: pink;
+    text-align:justify;
+}
+
+#cabeçalho{
+    display:flex;
+    flex-direction:row;
+}
+
+.initialPage{
+    display:flex;
+    width:1000px;
+    height:650px;
+    align-items:center;
+    justify-content:space-around;
+    margin-left:100px;
+}
+
+.foruns{
+    display:flex;
+    flex-direction:column;
+    margin-top:50px;
+    width:200px;
+    height:400px;
+    gap:0px;
+    background-color: pink;
+    text-align:justify;
+}
+
+.agenda{
+    display:flex;
+    flex-direction:column;
+    margin-top:50px;
+    width:200px;
+    height:400px;
+    gap:0px;
+    background-color: pink;
+    text-align:justify;
+}
+
