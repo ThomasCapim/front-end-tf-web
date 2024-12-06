@@ -185,8 +185,11 @@ a:not(:has(img, button)):hover{
     justify-content: space-between;
     margin-bottom: 20px;
 }
+.center > div.title-bold+form .linha-form {
+    justify-content: left;
+}
 
-.linha-form input[type="email"], .linha-form input[type="password"], .linha-form input[type="text"], .linha-form textarea, .linha-form select {
+.linha-form input[type="email"], .linha-form input[type="password"], .linha-form input[type="text"], .linha-form textarea, .linha-form select, .linha-form input[type="date"] {
     width: 300px;
     font-family: inherit;
     font-size: 14px;
@@ -195,7 +198,9 @@ a:not(:has(img, button)):hover{
 .linha-form label {
     padding-right: 20px;
     text-align: left;
-    
+}
+.center > div.title-bold+form .linha-form label {
+    width: 200px;
 }
 
 .linha-form textarea{
@@ -203,8 +208,14 @@ a:not(:has(img, button)):hover{
     min-height: 200px;
 }
 
-select#ano, select#turma{
+select#ano, select#turma, .linha-form input[type="date"]{
     width: auto;
+}
+.linha-form input[type="date"]{
+    margin: 0 10px;
+}
+.linha-form input[type="date"]:last-of-type{
+    margin-right: 0;
 }
 
 button {
@@ -238,7 +249,11 @@ button {
     align-items:center;
     margin: 10px 200px 0;
     flex-direction: column;
-    margin-top:50px;}
+    margin-top:50px;
+}
+.center:has(form.content-form>.linhaform){
+    
+}
 
 .v-align{
     display: flex;
@@ -249,6 +264,9 @@ button {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.h-align > form{
+    margin-top: 20px;
 }
 
 .flex-edit-restrito{
@@ -261,6 +279,19 @@ button {
 }
 .edit-memb-chap-right{
     flex: 3;
+}
+
+.memb-chap-infos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.memb-chap-info{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 table {
@@ -317,7 +348,6 @@ td, th {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .fotoPerfil img{
