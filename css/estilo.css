@@ -251,6 +251,12 @@ button {
     flex-direction: column;
     margin-top:50px;
 }
+.center{
+    display: flex;
+    justify-content: center;
+    margin: 10px 200px 0;
+    flex-direction: column;
+}
 .center:has(form.content-form>.linhaform){
     
 }
