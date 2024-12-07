@@ -31,7 +31,7 @@
 							<li><a href="https://www.instagram.com/gremionzedeoutubro">Instagram</a></li>
 							<li><a href="/PáginasUsuários/FaleConosco.html">Fale conosco</a></li>
 							<li><a href="https://ifnmg.edu.br/salinas">Portal IFNMG – Campus Salinas</a></li>
-							<li><a href="/PáginasAcessoRestrito/LoginAcessoRestrito.html" id="restr-btn-menu-azul">Acesso restrito</a></li>
+							<li><a href="/index.html" id="restr-btn-menu-azul">Sair da área restrita</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -43,7 +43,7 @@
 				<!-- Nota-se que eu não coloquei todas as coisas nas tabelas, como o corpo de notícias e a descrição de um evento na agenda, mas é que o foco das tabelas é só colocar um resumo do que é, já que não cabe tudo em uma linha -->
 				<div class="grupo-tabelas"> <!-- grupo das notícias -->
 					<div class="title-bold">Notícias</div>
-					<div class="linha-form" style="justify-content:flex-start">
+					<div class="linha-form">
 						<a href="/PáginasAcessoRestrito/PostagemAcessoRestrito.html"><button>Nova postagem</button></a>
 					</div>
 					<div class="title-bold">Últimas postagens:</div>
@@ -51,7 +51,7 @@
 						<tr>
 							<th>Título</th>
 							<th>Entidade</th>
-							<th>Senha</th>
+							<th>Data</th>
 							<th>Ação</th>
 						</tr>
 						<tr>
@@ -61,6 +61,7 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
@@ -72,6 +73,7 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
@@ -83,19 +85,21 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
 						</tr>
 					</table>
 					<div class="title-bold">
-						<a href="">Ver todas as postagens</a>
+						<a href="/PáginasAcessoRestrito/VisãoCompletaTabelas/tabelaPostagens.html">Ver todas as postagens</a>
 					</div>
 				</div>
 				<hr>
+
 				<div class="grupo-tabelas"> <!-- grupo da agenda -->
 					<div class="title-bold">Agenda/Calendário</div>
-					<div class="linha-form" style="justify-content:flex-start">
+					<div class="linha-form">
 						<a href="/PáginasAcessoRestrito/AgendaAcessoRestrito.html"><button>Novo evento</button></a>
 					</div>
 					<div class="title-bold">Últimos eventos criados:</div>
@@ -113,6 +117,7 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
@@ -124,6 +129,7 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
@@ -135,19 +141,21 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
 						</tr>
 					</table>
 					<div class="title-bold">
-						<a href="">Ver todas as postagens</a>
+						<a href="/PáginasAcessoRestrito/VisãoCompletaTabelas/tabelaAgenda.html">Ver todos os eventos</a>
 					</div>
 				</div>
 				<hr>
+
 				<div class="grupo-tabelas"> <!-- grupo dos administradores -->
 					<div class="title-bold">Administradores</div>
-					<div class="linha-form" style="justify-content:flex-start">
+					<div class="linha-form">
 						<a href="/PáginasAcessoRestrito/EditarAdmAcessoRestrito.html"><button>Novo administrador</button></a>
 					</div>
 					<div class="title-bold">Administradores cadastrados:</div>
@@ -165,6 +173,7 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
@@ -176,6 +185,7 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
@@ -187,13 +197,14 @@
 							<td>
 								<div class="action-btn">
 									<div class="edit-btn"><i class="fa-regular fa-pen-to-square fa-xl"></i></div>
+									<div class="view-btn"><i class="fa-solid fa-eye" style="color: #418087;"></i></div>
 									<div class="delete-btn"><i class="fa-regular fa-trash-can fa-xl" style="color: #da0001;"></i></div>
 								</div>
 							</td>
 						</tr>
 					</table>
 					<div class="title-bold">
-						<a href="">Ver todos os administradores</a>
+						<a href="/PáginasAcessoRestrito/VisãoCompletaTabelas/tabelaAdmins.html">Ver todos os administradores</a>
 					</div>
 				</div>
 			</div>

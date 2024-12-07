@@ -83,7 +83,7 @@ a:not(:has(img, button)):hover{
     color: #da0001;
 }
 /* Restrito */
-#restr-btn-menu-azul:hover{
+#cor-restrito #restr-btn-menu-azul:hover{
     border-bottom: 2px solid #418087;
     color: #418087;
 }
@@ -257,9 +257,9 @@ button {
     margin: 10px 200px 0;
     flex-direction: column;
 }
-.center:has(form.content-form>.linhaform){
+/* .center:has(form.content-form>.linhaform){
     
-}
+} */
 
 .v-align{
     display: flex;
@@ -293,11 +293,16 @@ button {
     gap: 10px;
     margin-bottom: 20px;
 }
+.memb-chap-infos > .action-btn {
+    gap: 10px;
+}
 .memb-chap-info{
     font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 100px;
+    min-width: 350px;
 }
 
 table {
@@ -311,12 +316,9 @@ td, th {
     border: 1px solid black;
     padding: 5px 4px;
 }
-.action-btn, .edit-btn, .delete-btn {
+.action-btn {
     display: flex;
-    justify-content: center;
-}
-.edit-btn, .delete-btn {
-    flex: 1;
+    justify-content: space-evenly;
 }
 
 .grupo-tabelas {
