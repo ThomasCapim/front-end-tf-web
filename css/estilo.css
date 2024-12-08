@@ -246,19 +246,36 @@ button {
     color: #fff;
 }
 
-.centerGremio{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    margin: 10px 200px 0;
-    flex-direction: column;
-    margin-top:50px;
-}
 .center{
     display: flex;
     justify-content: center;
     margin: 10px 200px 0;
     flex-direction: column;
+}
+
+.center > p{
+    columns: 2;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 1cm;
+    font-size: 18px;
+    margin: 0 50px;
+}
+.center > span{
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 1cm;
+    font-size: 18px;
+    margin: 0 50px;
+}
+.center > ul {
+    margin: 10px 104px 0;
+    line-height: 2em;
+}
+.sobreImg{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 /* .center:has(form.content-form>.linhaform){
     
