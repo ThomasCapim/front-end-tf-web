@@ -456,8 +456,9 @@ td, th {
     margin-bottom: 10px;
 }
 
-.postImg{
-
+.postImg img{
+    max-width: 100%;
+    /* object-fit: contain; */
 }
 
 .postReactions{
