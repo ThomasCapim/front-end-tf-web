@@ -4,9 +4,10 @@
 		<meta charset="UTF-8">
         <title>Página Inicial</title>
         <link rel="stylesheet" href="/css/estilo.css"/>
+        <script src="https://kit.fontawesome.com/ea32392e48.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <script src="main.js"></script>
+        
         <header>
 			<div id="logo">
 				<a href="/index.html">
@@ -36,42 +37,77 @@
 				</ul>
 			</nav>
         </header>
-
+        
 		<section>
-			<div class="initialPage">
-				<div class="foruns">
-					<p>Fóruns</p>
-				</div>
-				<div class="centralBox">
-					<div id="cabeçalho">
-						<img src="../imgs/userPic.png" width="60px" height="60px"/>
-						<p><br><strong>User</strong><br>08 de outubro de 2024 às 14:00</p>
-					</div>
-					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan est sit amet purus lacinia sodales a iaculis purus. Mauris aliquam odio turpis, sit amet eleifend eros ultricies in. Nullam hendrerit nisl et pulvinar congue. Praesent vulputate lobortis enim, a efficitur est sagittis at.</p>
-				</div>
-				<div class="agenda">
-					<p>sofis</p>
-				</div>
-			</div>
+            <div class="posts-area">
+                <div class="postagem">
+                    <div class="postEntityInfo"> <!-- Foto da entidade, Nome e data de postagem -->
+                        <div> <!-- Imagem -->
+                            <img src="https://via.placeholder.com/100" alt="">
+                        </div>
+                        <div class="name-n-date">
+                            <!-- Nome da entidade -->
+                            <div class="entityName">Presidência do Grêmio</div>
+                            <!-- Data de publicação -->
+                            <div>07 de dezembro de 2024, às 18:33</div>
+                        </div>
+                    </div>
+                    <!-- Título da notícia e corpo de texto -->
+                    <div class="postBodyText">
+                        <div class="postTitle">Primeira postagem nesse site gracioso</div>
+                        <p>Eis aqui o início de um pesadelo!</p>
+                    </div>
+                    <div class="postImg"> <!-- Imagem incluída na postagem -->
+                        <img class="imgPost" src="https://via.placeholder.com/530x1920" alt="TEste para ver se funciona">
+                    </div>
+                    <div class="postReactions"> <!-- Curtida e compartilhamento -->
+                        <div> <!-- Curtida -->
+                            <i class="fa-solid fa-heart fa-2xl" style="color: #ff3d3d;"></i> <b>15 mil curtidas</b>
+                        </div>
+                        <div> <!-- Compartilhamento -->
+                            <i class="fa-solid fa-share-nodes fa-2xl"></i>
+                        </div> 
+                    </div>
+                </div>
+                <div class="postagem">
+                    <div class="postEntityInfo"> <!-- Foto da entidade, Nome e data de postagem -->
+                        <div> <!-- Imagem -->
+                            <img src="https://via.placeholder.com/100" alt="">
+                        </div>
+                        <div class="name-n-date">
+                            <!-- Nome da entidade -->
+                            <div class="entityName">Tesouraria</div>
+                            <!-- Data de publicação -->
+                            <div>07 de dezembro de 2024, às 18:50</div>
+                        </div>
+                    </div>
+                    <!-- Título da notícia e corpo de texto -->
+                    <div class="postBodyText">
+                        <div class="postTitle">Informes de sobre o uso do dinheiro das carteirinhas</div>
+                        <p>Nós, da tesouraria do Grêmio Estudantil Onze de Outubro<span>&trade;</span>, viemos por meio dessa publicação informar toda a comunidade estudantil de que o dinheiro recebido do pagamento das carteirinhas estudantis será desviado por meio do peculato.</p>
+                        <p>Dessa maneira, o dinheiro do pagamento não poderá ser utilizado para o pagamento da confecção das carteirinhas, nem mesmo o lucro, que seria obtido, em prol dos estudantes, como produção de eventos.</p>
+                        <p>Desde já, agradecemos pela compreensão de todos os indivíduos incluídos na comunidade estudantil do IFNMG – <i>Campus</i> Salinas.</p>
+                    </div>
+                    <div class="postImg"> <!-- Imagem incluída na postagem -->
+                        <img class="imgPost" src="/imgs/IMG-20240112-WA0009.jpg" alt="TEste para ver se funciona">
+                    </div>
+                    <div class="postReactions"> <!-- Curtida e compartilhamento -->
+                        <div> <!-- Curtida -->
+                            <i class="fa-solid fa-heart fa-2xl" style="color: #ff3d3d;"></i> <b>15 mil curtidas</b>
+                        </div>
+                        <div> <!-- Compartilhamento -->
+                            <i class="fa-solid fa-share-nodes fa-2xl"></i>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div id="modalID" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-contentID">
+                <div id="caption"></div>
+            </div>
 		</section>
-
-		<!-- <div class="initialPage">
-			<div class="foruns">
-				<p>Fóruns</p>
-			</div>
-			<div class="centralBox">
-				<div id="cabeçalho">
-					<img src="../imgs/userPic.png" width="60px" height="60px"/>
-					<p><br><strong>User</strong><br>08 de outubro de 2024 às 14:00</p>
-				</div>
-				<br>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In accumsan est sit amet purus lacinia sodales a iaculis purus. Mauris aliquam odio turpis, sit amet eleifend eros ultricies in. Nullam hendrerit nisl et pulvinar congue. Praesent vulputate lobortis enim, a efficitur est sagittis at.</p>
-			</div>
-			<div class="agenda">
-				<p>sofis</p>
-			</div>
-		</div> -->
-
+        <script src="/main.js"></script>
 	</body>
 </html>
