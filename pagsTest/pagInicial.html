@@ -7,7 +7,7 @@
         <script src="https://kit.fontawesome.com/ea32392e48.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <script src="main.js"></script>
+        
         <header>
 			<div id="logo">
 				<a href="/index.html">
@@ -47,19 +47,26 @@
                         </div>
                         <div class="name-n-date">
                             <!-- Nome da entidade -->
-                            <div class="title-bold first">Presidência do Grêmio Estudantil</div>
+                            <div class="entityName">Presidência do Grêmio</div>
                             <!-- Data de publicação -->
-                            <div>07 de dezembro de 2024, às 18:46</div>
+                            <div>07 de dezembro de 2024, às 18:33</div>
                         </div>
                     </div>
-                    <div class=""> <!-- Título da notícia e corpo de texto -->
-                        <div class="title-bold first">Postagem numero 1</div>
-                        <div>Eis aqui o corpo do texto</div>
+                    <!-- Título da notícia e corpo de texto -->
+                    <div class="postBodyText">
+                        <div class="postTitle">Primeira postagem nesse site gracioso</div>
+                        <p>Eis aqui o início de um pesadelo!</p>
                     </div>
-                    <div class=""><img src="" alt=""></div> <!-- Imagem incluída na postagem -->
-                    <div class=""> <!-- Curtida e compartilhamento -->
-                        <div></div> <!-- Curtida -->
-                        <div></div> <!-- Compartilhamento -->
+                    <div class="postImg"> <!-- Imagem incluída na postagem -->
+                        <img class="imgPost" src="https://via.placeholder.com/530x1920" alt="TEste para ver se funciona">
+                    </div>
+                    <div class="postReactions"> <!-- Curtida e compartilhamento -->
+                        <div> <!-- Curtida -->
+                            <i class="fa-solid fa-heart fa-2xl" style="color: #ff3d3d;"></i> <b>15 mil curtidas</b>
+                        </div>
+                        <div> <!-- Compartilhamento -->
+                            <i class="fa-solid fa-share-nodes fa-2xl"></i>
+                        </div> 
                     </div>
                 </div>
                 <div class="postagem">
@@ -82,15 +89,11 @@
                         <p>Desde já, agradecemos pela compreensão de todos os indivíduos incluídos na comunidade estudantil do IFNMG – <i>Campus</i> Salinas.</p>
                     </div>
                     <div class="postImg"> <!-- Imagem incluída na postagem -->
-                        <img id="imgPost" src="/imgs/IMG-20240112-WA0009.jpg" alt="">
-
-                        <div class="modalImg">
-
-                        </div>
+                        <img class="imgPost" src="/imgs/IMG-20240112-WA0009.jpg" alt="TEste para ver se funciona">
                     </div>
                     <div class="postReactions"> <!-- Curtida e compartilhamento -->
                         <div> <!-- Curtida -->
-                            <i class="fa-solid fa-heart fa-2xl" style="color: #ff3d3d;"></i>
+                            <i class="fa-solid fa-heart fa-2xl" style="color: #ff3d3d;"></i> <b>15 mil curtidas</b>
                         </div>
                         <div> <!-- Compartilhamento -->
                             <i class="fa-solid fa-share-nodes fa-2xl"></i>
@@ -98,6 +101,16 @@
                     </div>
                 </div>
             </div>
+
+            <div id="modalID" class="modal">
+                            
+                <span class="close">&times;</span>
+
+                <img class="modal-content" id="modal-contentID">
+
+                <div id="caption"></div>
+            </div>
 		</section>
+        <script src="/main.js"></script>
 	</body>
 </html>
