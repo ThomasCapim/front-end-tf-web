@@ -57,6 +57,9 @@ div#logo{
     font-weight: bold;
 }
 
+.mT {
+    margin-top: 20px;
+}
 
 /* Preciso mudar essa estrutura dos links, tá muito mal organizada */
 a:not(:has(img, button)) { /* :not(:has(img)) vai selecionar todos os elementos, exceto aqueles que contêm imagens */
@@ -382,7 +385,7 @@ td, th {
     text-align:justify;
 }
 
-.agenda{
+/* .agenda{
     display:flex;
     flex-direction:column;
     margin-top:50px;
@@ -391,7 +394,7 @@ td, th {
     gap:0px;
     background-color: pink;
     text-align:justify;
-}
+} */
 
 /* coisa */
 .fotoPerfil {
@@ -414,6 +417,39 @@ td, th {
 
 
 /* Teste de seletores para o negócio de postagens */
+.iniPage{
+    display: flex;
+    justify-content: space-around;
+}
+
+.areaAgenda{
+    width: 25vw;
+}
+.agenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: inherit;
+    background-color: white;
+    box-shadow: 0 0 10px #418087;
+
+    border-radius: 5px;
+    min-height: 50%;
+    padding: 20px;
+
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.agenda ol {
+    margin: 20px 0;
+    margin-left: 20px;
+    line-height: 1.5em;
+}
+.agenda ol li::marker{
+    font-weight: bold;
+}
+
 .posts-area{
     display: flex;
     flex-direction: column-reverse;
@@ -421,9 +457,9 @@ td, th {
 }
 
 .postagem {
-    width: 50%;
-    min-height: 50%;
-    background-color: lightblue;
+    width: 50vw;
+    /* min-height: 0%; */
+    background-color: rgba(158, 202, 207, 0.5);
     border-radius: 5px;
     padding: 20px;
 }
@@ -438,7 +474,7 @@ td, th {
 .name-n-date{
     margin: 20px 0 0 20px;
 }
-.entityName{
+.entityName, .agendaTitle{
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -471,7 +507,10 @@ td, th {
 .postReactions{
     display: flex;
     justify-content: space-between;
-    margin: 10px 10px 0;
+    margin: 20px 10px 0;
+}
+.postReactions i{
+    cursor: pointer;
 }
 
 /* Modal para mostrar imagens */
