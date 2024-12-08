@@ -346,26 +346,7 @@ td, th {
     gap:0px;
 }
 
-
-/* coisa */
-.fotoPerfil {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border: 3px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fotoPerfil img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.centralBox    
-{
+.centralBox{
     display:flex;
     flex-direction:column;
     margin-top:50px;
@@ -412,3 +393,75 @@ td, th {
     text-align:justify;
 }
 
+/* coisa */
+.fotoPerfil {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 3px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoPerfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* Teste de seletores para o negócio de postagens */
+.posts-area{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.postagem {
+    width: 50%;
+    min-height: 50%;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.postEntityInfo{
+    display: flex;
+    margin-bottom: 20px;
+}
+.postEntityInfo img{
+    border-radius: 50%;
+}
+.name-n-date{
+    margin: 20px 0 0 20px;
+}
+.entityName{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.postBodyText p{
+    text-align: justify;
+    text-indent: 1cm;
+    line-height: 1.5em;
+    margin-bottom: .4em;
+}
+.postTitle{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.postImg{
+
+}
+
+.postReactions{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
