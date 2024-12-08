@@ -14,3 +14,9 @@ O site do grêmio é utilizado por estudantes/comunidade estudantil e controlado
 - Acesso restrito para membros do grêmio;
 - Criação e edição de postagens, eventos, chapas etc. por parte dos membros
 
+### Integrantes:
+- [Alan Miranda Assis](https://github.com/AlanM1rand4)
+- [Beatriz de Oliveira Sousa](https://github.com/bibi-zzy)
+- [Sofia Manuella Dias de Sousa](https://github.com/SofiaManu)
+- [Thomás Matos Mendes](https://github.com/ThomasCapim)
+- [Vitoria Josefa Magalhães dos Santos](https://github.com/VitoriaJosefa)
