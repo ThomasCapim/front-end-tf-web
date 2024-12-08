@@ -2,7 +2,7 @@
 Front-End do trabalho final da disciplina de WEB
 
 ## "Yakuza: Like a Dragon" Fanclub
-### [Link no site do Vercel do Front-End do trabalho final de WEB](https://front-end-tf-web-nu.vercel.app/)
+### [Link no site do Vercel do Front-End do trabalho final de WEB](https://gremio-onze-de-outubro.vercel.app/)
 
 ### Descrição
 O site do grêmio é utilizado por estudantes/comunidade estudantil e controlado membros do grêmio, tendo como objetivo levar informações sobre eventos, ações do grêmio, dentre outras.
